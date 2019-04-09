@@ -2,26 +2,32 @@
 <html lang="en">
 {% load static %}
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
     <title>Abrar Zahin</title>
-
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   </head>
-
   <body>
-
+      <header>
+          <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+              
+            </div>
+          </div>
+        </header>
     <main role="main">
-
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Job Detail</h1>
           <p class="lead text-muted">{{ job.summary }}</p>
-          <img src="{% static 'abrar.jpg' %}" height="300" />
+          <img src="{{job.image.url}}" height="300" />
           <p>
             <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
           </p>
@@ -29,7 +35,7 @@
       </section>
 
     </main>
-
+   
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
